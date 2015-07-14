@@ -1,0 +1,47 @@
+.fluid-header {
+  margin: -24px;
+  margin-bottom: 60px;
+  text-align: center;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 200px;
+}
+.fluid-header .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 0px;
+}
+.fluid-header img {
+  margin-top:150px;
+  width: 100px;
+}
+.profile-modal {
+  height: auto;
+  overflow: auto;
+  max-height: 700px;
+  width: 30%;
+  min-width: 400px;
+}
+.count_int {
+  font-weight: bolder;
+  font-size: 30px;
+}
+.destinasi {
+  background-color: rgba(0, 0, 0, 0.74);
+  width: 100%;
+  color: #fff;
+  padding-top: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.title-destinasi {
+  font-weight: bold;
+  font-size: 20pt;
+  line-height: 21pt;
+}
+.title-destinasi small {
+  font-weight: normal;
+}
