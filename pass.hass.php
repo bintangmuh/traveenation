@@ -6,6 +6,8 @@ $options = [
 ];
 $hash = password_hash($password, PASSWORD_DEFAULT, $options);
 echo "$hash";
+
+
 if (password_verify($password, $hash)) {
 // Sukses!
 echo "hasil";

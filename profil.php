@@ -1,5 +1,5 @@
 <?php
-  require_once 'database.php';
+  require_once 'autoload.php';
   require 'user.php';
   $user = User::where('username', $_GET['uid'])->first();
 ?>
@@ -20,13 +20,15 @@
     <div class="row">
       <div class="parallax-container" style="position: relative">
         <div class="parallax">
-          <img src="<?php echo $user->header_img ?>">
+          <?php if ($user->header_img): ?>
+            <img src="<?php echo $user->header_img ?>">
+          <?php endif; ?>
         </div>
         <!-- <h4 class="center-aligned">Lava Tour - Direktori Pariwisata indonesia</h4> -->
         <div class="destinasi">
           <div class="container row">
             <div class="col s3 m2 l1">
-              <img src="<?php echo $user->profil_img ?>" class="responsive-img circle" />
+              <img src="<?php echo $user->profil_img ?>" class="profpic responsive-img circle" />
             </div>
             <div class="col s9 m10 l8 title-destinasi">
               <span><?php echo $user->real_name ?><br><small><?php echo "11 Posts" ?></small></span>
@@ -143,9 +145,6 @@
     <!-- Javascript Goes Here -->
     <script src="js/jquery.js"></script>
     <script src="js/materialize.min.js"></script>
-
-
-    <script src="js/gmaps.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){

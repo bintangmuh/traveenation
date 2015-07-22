@@ -3,15 +3,22 @@
   margin-bottom: 60px;
   text-align: center;
   background-position: center center;
+  background-color: #989898;
   background-size: cover;
   position: relative;
   height: 200px;
+}
+.parallax {
+  background-color: #989898;
 }
 .fluid-header .close-btn {
   position: absolute;
   top: 5px;
   right: 10px;
   padding: 0px;
+}
+.profpic {
+  width: 50px;
 }
 .fluid-header img {
   margin-top:150px;
@@ -75,3 +82,43 @@
     height: 2px;
     background-color: #01584e;
     will-change: left, right; }
+
+/*Signup*/
+.rowback {
+  position: relative;
+  background-color: #008080;
+  height: 400px;
+  margin-bottom: -290px;
+  color: #fff;
+  padding-top: 40px;
+  text-align: center;
+}
+.back-btn {
+  position: absolute;
+  z-index: 1;
+  bottom: -25px;;
+  left: 15px;
+}
+.login-btn {
+  position: absolute;
+  z-index: 1;
+  bottom: -25px;
+  right: 15px;
+}
+.rowback h3{
+  margin-top: 0px;
+}
+ .form-signup {
+   position: relative;
+   margin-top: 30px;
+   background-color: #fff;
+   padding: 20px;
+ box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+ z-index: 3;
+ }
+ .form-signup h3 {
+   margin-top: 0px;
+ }
+ .form-signup p, .form-signup .s12 p {
+   color: #575b5a;
+ }
