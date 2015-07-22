@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ profil.php?uid=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ profil.php?uid=$1
+RewriteRule ^place/([a-zA-Z0-9_-]+)$ place.php?pid=$1
+RewriteRule ^place/([a-zA-Z0-9_-]+)/$ place.php?pid=$1

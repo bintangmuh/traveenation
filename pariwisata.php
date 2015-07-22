@@ -1,6 +1,8 @@
 <?php
-  require 'database.php';
 
-  $users = $capsule::table('tabel_user')->get();
-  echo var_dump($users);
+  use Illuminate\Database\Eloquent\Model as Model;
+  class Pariwisata extends Model {
+    protected $table = 'tabel_destinasi';
+  }
+
 ?>

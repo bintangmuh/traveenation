@@ -28,6 +28,10 @@
   font-weight: bolder;
   font-size: 30px;
 }
+#map-canvas {
+  height: 300px;
+  width: 100%;
+}
 .destinasi {
   background-color: rgba(0, 0, 0, 0.74);
   width: 100%;
@@ -45,3 +49,29 @@
 .title-destinasi small {
   font-weight: normal;
 }
+.tbl-loc td:first-child {
+  width: 20%;
+}
+.tbl-loc td {
+  padding: 5px;
+}
+/*profil tabs*/
+.tabs {
+  background-color: #fff;
+}
+.tabs .tab {
+}
+.tabs .tab a {
+  color: #00796b;
+}
+.tabs .tab a:hover {
+        color: #016257; }
+    .tabs .tab.disabled a {
+      color: #f9c9cb;
+      cursor: default; }
+  .tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #01584e;
+    will-change: left, right; }
